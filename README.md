@@ -1,25 +1,43 @@
 # DevOps Project 🚀
 
+![CI/CD](https://github.com/mahmoudelshazly55/devops-project/actions/workflows/main.yml/badge.svg)
+
 ## 📌 Overview
-This is a full-stack project built using Node.js and Express, deployed on Railway.
+This project demonstrates a complete DevOps workflow by building, containerizing, and deploying a Node.js application.
+
+It includes CI/CD automation, Docker containerization, and cloud deployment using Railway.
 
 ## ⚙️ Tech Stack
 - Node.js
-- Express
-- HTML, CSS, JavaScript
+- Express.js
 - Docker
-- Railway
+- Railway (Cloud Deployment)
+- GitHub Actions (CI/CD)
+- HTML, CSS, JavaScript
 
 ## 🚀 Features
-- Static Frontend connected to Backend
-- REST API integration
-- Cloud Deployment
-- CI/CD using GitHub Actions
+- Full CI/CD pipeline using GitHub Actions
+- Automated build on every push
+- Dockerized application
+- Cloud deployment on Railway
+- Scalable backend structure
 
+## 🏗️ Architecture
+
+Developer → GitHub → GitHub Actions → Railway → Live Application
+
+1. Developer pushes code to GitHub
+2. GitHub Actions triggers CI/CD pipeline
+3. Project is built and tested automatically
+4. Railway deploys the latest version
+5. Application becomes live
+   
 ## 🌍 Live Demo
 https://devops-project-production-5486.up.railway.app
 
 ## 📦 Installation
+
 ```bash
 npm install
 npm start
+
