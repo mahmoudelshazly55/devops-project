@@ -17,3 +17,11 @@ sr.reveal('.hero-text', { delay: 200, origin: 'top' });
 sr.reveal('.hero-img', { delay: 450, origin: 'top' });
 sr.reveal('.icons', { delay: 500, origin: 'left' });
 sr.reveal('.scroll-down', { delay: 500, origin: 'right' });
+
+fetch("/api/hero")
+  .then(res => res.json())
+  .then(data => {
+    document.querySelector(".hero-text h1").innerText = data.title;
+    document.querySelector(".hero-text h4").innerText = data.subtitle;
+    document.querySelector(".hero-text p").innerText = data.description;
+  });

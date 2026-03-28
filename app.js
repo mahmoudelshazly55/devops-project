@@ -8,8 +8,12 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static("public"));
 
 // الصفحة الرئيسية
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+app.get("/api/hero", (req, res) => {
+  res.json({
+    title: "GOBLINS",
+    subtitle: "Lead Supercell",
+    description: "Join millions of players worldwide and build your village!"
+  });
 });
 
 app.listen(PORT, () => {
