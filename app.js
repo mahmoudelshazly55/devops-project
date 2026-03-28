@@ -20,5 +20,4 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-const connectDB = require("./config/db");
-connectDB();
+
